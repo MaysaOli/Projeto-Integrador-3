@@ -1,0 +1,106 @@
+<html lang="pt-BR"> 
+  <head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Calendário de Provas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  </head>
+  <body class="font-roboto bg-gray-100">
+    <header class="bg-blue-600 text-white p-4">
+      <div class="container mx-auto flex justify-between items-center">
+        <h1 class="text-xl font-bold">
+          Calendário de Provas
+        </h1>
+        <nav>
+          <ul class="flex space-x-4">
+            <li>
+              <a class="hover:underline" href="index.php">
+                Início
+              </a>
+            </li>
+            <li>
+              <a class="hover:underline" href="areadoestudante.php">
+                Área do Estudante
+              </a>
+            </li>
+            <li>
+              <!-- Formulário de logout -->
+              <form action="login.php" method="POST">
+                <button type="submit" class="hover:underline bg-red-500 text-white px-3 py-1 rounded">
+                  Sair
+                </button>
+              </form>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container mx-auto p-4">
+      <section class="text-center my-8">
+        <h2 class="text-2xl font-bold mb-4">
+          Bem-vindo ao Calendário de Provas
+        </h2>
+        <p class="text-lg">
+          Adicione suas provas e receba lembretes e resumos para estudar!
+        </p>
+        <img alt="Imagem divertida e dinâmica de um calendário com ícones de provas e lembretes" class="mx-auto mt-4" height="150" src="https://storage.googleapis.com/a1aa/image/-cSytuC8rYCdI93UpP7v_RPkTxubt0ddA7E87-qaqjk.jpg" width="225"/>
+      </section>
+      <section class="bg-white p-6 rounded shadow-md mb-8 max-w-md mx-auto">
+        <h3 class="text-xl font-bold mb-4">
+          Adicionar Prova
+        </h3>
+        <form class="space-y-4">
+          <div>
+            <label class="block text-lg font-medium" for="subject">
+              Matéria
+            </label>
+            <input class="w-full p-2 border border-gray-300 rounded" id="subject" name="subject" placeholder="Ex: Matemática" type="text"/>
+          </div>
+          <div>
+            <label class="block text-lg font-medium" for="date">
+              Data
+            </label>
+            <input class="w-full p-2 border border-gray-300 rounded" id="date" name="date" type="date"/>
+          </div>
+          <div>
+            <label class="block text-lg font-medium" for="summary">
+              Resumo
+            </label>
+            <textarea class="w-full p-2 border border-gray-300 rounded" id="summary" name="summary" placeholder="Ex: Estude álgebra e geometria"></textarea>
+          </div>
+          <button class="bg-blue-600 text-white px-4 py-2 rounded" type="submit">
+            Adicionar Prova
+          </button>
+        </form>
+      </section>
+      <section class="bg-white p-6 rounded shadow-md mb-8 max-w-md mx-auto">
+        <h3 class="text-xl font-bold mb-4">
+          Anexar Arquivo para Estudo
+        </h3>
+        <form class="space-y-4">
+          <div>
+            <label class="block text-lg font-medium" for="file">
+              Escolha o arquivo
+            </label>
+            <input class="w-full p-2 border border-gray-300 rounded" id="file" name="file" type="file"/>
+          </div>
+          <button class="bg-blue-600 text-white px-4 py-2 rounded" type="submit">
+            Anexar Arquivo
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="bg-blue-600 text-white p-4 mt-8">
+      <div class="container mx-auto text-center">
+        <p>
+          © 2025 Calendário de Provas. Todos os direitos reservados.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
+</html>
